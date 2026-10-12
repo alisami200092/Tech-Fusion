@@ -6,7 +6,7 @@
 
 <p align="center">
   <b>A complete mobile shopping app for PC gamers and tech enthusiasts.</b><br>
-  Built with Flutter, Dart, and Firebase as my first university semester project.
+  Built with Flutter, Dart, and Firebase.
 </p>
 
 <p align="center">
@@ -19,17 +19,14 @@
 
 ---
 
-## 💡 About This Project (A Quick Story)
+## 📌 Project Overview
 
-Hi there! I am **Ali Sami**, and this was my very first mobile e-commerce application, developed during my university mobile app development course.
+**TechFusion** is a cross-platform mobile e-commerce application tailored for PC gaming gear and computer hardware. The app delivers a complete, production-grade retail journey:
 
-Growing up, I've always loved gaming gear—mechanical keyboards with clicky switches, ultra-light mice, curved OLED monitors, and custom PC builds. When it came time to pick a semester project, I didn't want to build just another simple to-do list or a mock shopping app with static fake data.
+- **Customer Journey**: Seamless authentication, category navigation, live search, cart calculations, multi-step checkout with interactive card animations, real-time parcel tracking, and direct WhatsApp customer support.
+- **Store Operations**: A dedicated administrative portal equipped with live revenue analytics, interactive chart trends, inventory CRUD management, order fulfillment controls, and user role management.
 
-I wanted to challenge myself and build a **real, full-fledged shopping experience** from start to finish:
-- A shopper can sign up, search for products, add things to their cart or wishlist, go through a multi-step checkout with animated payment cards, and watch their delivery progress on a live timeline.
-- An admin can log in to a private control dashboard, see real-time charts showing sales and revenue, add and update products, approve orders, and manage registered users.
-
-Everything connects to **Google Firebase** for real-time authentication and cloud database storage. Building this taught me so much about app architecture, handling user state, responsive UI design, and writing clean, maintainable code.
+The system is powered by **Google Firebase** for real-time authentication and cloud database management, with **Provider** managing reactive client state.
 
 ---
 
@@ -240,7 +237,7 @@ flutter_techfusion_project/
 │   ├── products/                # Product details and category-filtered pages
 │   ├── profile_page_settings/   # Settings, password change & 2FA screens
 │   ├── shoppingCart/            # Cart providers, wishlist, checkout flow & order models
-│   ├── about.dart               # Project & university course story
+│   ├── about.dart               # About TechFusion information screen
 │   ├── card_membership.dart     # TechFusion+ perks screen
 │   ├── login_page.dart          # Sign-in screen
 │   ├── main.dart                # App entry point & Firebase initialization
@@ -285,26 +282,3 @@ Make sure you have the following installed on your computer:
    ```bash
    flutter run
    ```
-
----
-
-## 🎓 What I Learned from This Project
-
-As a university student building my first major mobile app, this project was a huge milestone for me. Key lessons I took away:
-
-1. **Thinking in State**: Moving from basic widget rebuilds to using `Provider` to keep the cart total, product counts, and wishlist in sync across different screens.
-2. **Real-Time Databases**: Connecting to Cloud Firestore streams so that when an admin marks an order as "Shipped", the customer's phone updates the delivery timeline immediately without refreshing.
-3. **User-Friendly Design**: Realizing that small details make a big difference—like adding a country picker, flipping a credit card when entering CVV, or showing clear error messages if a field is missed.
-4. **Separation of Concerns**: Keeping business logic (like authentication and database queries) separate from presentation widgets.
-
----
-
-## 📬 Contact & Connect
-
-If you have any feedback, suggestions, or want to connect:
-
-- **Developer**: Ali Sami
-- **GitHub**: [@alisami200092](https://github.com/alisami200092)
-- **Email**: [asami2000@yahoo.com](mailto:asami2000@yahoo.com)
-
-⭐ **If you find this project interesting or helpful, feel free to give it a star on GitHub!**
